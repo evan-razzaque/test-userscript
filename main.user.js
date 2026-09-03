@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Test userscript
 // @namespace    http://tampermonkey.net/
-// @version      2026-09-03
+// @version      1.0
 // @downloadURL  https://raw.githubusercontent.com/evan-razzaque/test-userscript/refs/heads/main/main.user.js
 // @updateURL    https://raw.githubusercontent.com/evan-razzaque/test-userscript/refs/heads/main/main.meta.js
 // @description  try to take over the world!
@@ -16,4 +16,5 @@
 
     // Your code here...
 	console.log("test github userscript")
+	console.log("more testing")
 })();

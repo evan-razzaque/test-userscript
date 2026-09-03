@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         New Userscript
+// @name         Test userscript
 // @namespace    http://tampermonkey.net/
-// @version      2026-09-02
+// @version      2026-09-03
 // @downloadURL  https://raw.githubusercontent.com/evan-razzaque/test-userscript/refs/heads/main/main.user.js
 // @updateURL    https://raw.githubusercontent.com/evan-razzaque/test-userscript/refs/heads/main/main.meta.js
 // @description  try to take over the world!

@@ -1,6 +1,17 @@
 #!/bin/bash
 
-grep -Pzo "// ==UserScript==(\n|.)*?\n// ==?" main.user.js | \
-	cat <(head -c -1) <(echo UserScript==) > main.meta.js
+main() {
+	local files=(*.user.js)
+	local f meta_file
 
-git add main.meta.js
+	for f in "${files[@]}"; do
+		meta_file=${f%user.js}meta.js
+
+		grep -Pzo "// ==UserScript==(\n|.)*?\n// ==?" "$f" | \
+			cat <(head -c -1) <(echo UserScript==) > "$meta_file"
+
+		git add "$meta_file"
+	done
+}
+
+main "$@"

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+grep -Pzo "// ==UserScript==(\n|.)*?\n// ==?" main.user.js | \
+	cat <(head -c -1) <(echo UserScript==) > main.meta.js
+
+git add main.meta.js

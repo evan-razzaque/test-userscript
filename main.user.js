@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Test userscript
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  try to take over the world!
 // @author       You
 // @match        https://*/*
@@ -15,4 +15,5 @@
     // Your code here...
 	console.log("test github userscript")
 	console.log("more testing")
+	console.log("even more testing")
 })();
